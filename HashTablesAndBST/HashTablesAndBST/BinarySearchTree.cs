@@ -1,11 +1,9 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace HashTablesAndBST
 {
-
     class BinarySearchTree<T> where T : IComparable<T>
     {
         public T NodeData { get; set; }
@@ -49,6 +47,10 @@ namespace HashTablesAndBST
                 this.rightCount++;
                 this.RightTree.Display();
             }
+        }
+        public void GetSize()
+        {
+            Console.WriteLine("Size" + " " + (1 + this.leftCount + this.rightCount));
         }
     }
 }
